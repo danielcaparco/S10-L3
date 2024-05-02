@@ -1,0 +1,8 @@
+mov EAX,0x20: sposta il valore 32 in EAX
+mov EDX,0x38: sposta il valore 56 in EDX
+add EAX,EDX: somma EDX e EAX qiundi 56+32=88
+mov EBP,EAX: sposta EAX in EBP
+cmp EBP,0xa: controlla che 0xa sia uguale con il valore dentro EBP
+jge 0x1176 <main+61>: se la destinazione di cmp è maggiore del valore di conntrollo viene effettuato un salto
+mov eax,0x0: sposta il valore 0 in eax
+call 0x1030 <printf@plt>: chiama la funzione printf
